@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { Send, Bot, User, Loader2 } from 'lucide-react';
 import { flashcards, quiz, cases } from '../data';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const SYSTEM_INSTRUCTION = `Eres un asistente educativo experto en el tema "Los Efectos de la Familia sobre el Aprendizaje Infantil". 
 Tu objetivo es ayudar a los estudiantes a repasar y comprender los conceptos clave.
